@@ -10,14 +10,55 @@
         @content;
     }
 }
-  
+
 @mixin desktop {
     @media (min-width: #{$desktop}) {
         @content;
     }
 }
+
 @mixin grid($columnas, $espaciado ) {
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+
+
+@mixin boton($colorFondo, $colorTexto, $display) {
+    background-color: $colorFondo;
+    color: $colorTexto;
+    font-weight: $bold;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-align: center;
+    margin-top: calc($separacion / 2);
+    display: $display;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: darken($colorFondo, 5);
+        animation: slide 3s;
+
+    }
+}
+
+// Define la animación slidein
+@keyframes slide {
+    0% {
+        transform: scale(1, 1);
+    }
+    30% {
+        transform: scale(0.92, 0.95);
+    }
+    50%{
+        transform: scale(1, 1);
+    }
+    80% {
+        transform: scale(0.92, 0.95);;
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+

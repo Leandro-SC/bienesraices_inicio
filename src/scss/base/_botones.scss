@@ -1,0 +1,27 @@
+
+.boton-anaranjado{
+    @include boton($amarillo,$blanco,block);
+    
+}
+
+.boton-anaranjado-inline{
+    @include boton($amarillo,$blanco,inline-block);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
