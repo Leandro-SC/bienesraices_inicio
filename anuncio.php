@@ -1,50 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./build/css/app.css">
-    <title>Bienes Raices</title>
-</head>
-<body>
+<?php
 
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
+require 'includes/funciones.php';
 
-                <a href="/">
-                    <img src="./build/img/logo.svg" alt="logo de Bienes Raices">
-                </a>
-                <div class="mobile-menu">
-                    <img src="/build/img/barras.svg" alt="icono menú responsivo">
-                </div>
+incluirTemplate('header');
 
-                <div class="derecha">
+?>
 
-                    <img src="build/img/dark-mode.svg" alt="boton para cambiar tema oscuro" class="dark-mode-boton">
-
-                    <nav class="navegacion">
-
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-                
-            </div> <!----Cierre de la barra-->
-
-        </div>
-    </header>
 
     <main class="contenedor seccion contenido-centrado">
 
         <h1>Casa en Venta fente al bosque</h1>
 
         <picture>
-            <source loading="lazy" srcset="build/img/destacada.webp" type="image/webp">
-            <source loading="lazy" srcset="build/img/destacada.jpg" type="image/jpeg">
-            <img loading="lazy" src="build/img/destacada.jpg" alt="Imagen de la propiedad">
+            <source loading="lazy" srcset="/bienesraicesbuild/img/destacada.webp" type="image/webp">
+            <source loading="lazy" srcset="/bienesraicesbuild/img/destacada.jpg" type="image/jpeg">
+            <img loading="lazy" src="/bienesraicesbuild/img/destacada.jpg" alt="Imagen de la propiedad">
         </picture>
 
         <div class="resumen-propiedad">
@@ -53,13 +23,13 @@
             <ul class="iconos-caracteristicas">
                 <li>
                     <div class="icono-inferior">
-                        <img loading="lazy" src="build/img/icono_wc.svg" alt="icono baño">
+                        <img loading="lazy" src="/bienesraicesbuild/img/icono_wc.svg" alt="icono baño">
                         <p>3</p>
                     </div>
                 </li>
                 <li>
                     <div class="icono-inferior">
-                        <img loading="lazy" src="build/img/icono_estacionamiento.svg"
+                        <img loading="lazy" src="/bienesraicesbuild/img/icono_estacionamiento.svg"
                             alt="icono estacionamiento">
                         <p>1</p>
                     </div>
@@ -68,7 +38,7 @@
                 <li>
 
                     <div class="icono-inferior">
-                        <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono dormitorios">
+                        <img loading="lazy" src="/bienesraicesbuild/img/icono_dormitorio.svg" alt="icono dormitorios">
                         <p>3</p>
                     </div>
 
@@ -101,28 +71,8 @@
 
     </main>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
+    <?php
 
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-
-        <p class="copyright">
-            Todos los Derechos Reservados &copy;
-        </p>
-
-    </footer>
-
-
-
-      <!---Scripts--->
-      <script src="./build/js/bundle.min.js"></script>
-    
-</body>
-</html>
+    include './includes/templates/footer.php';
+?>
 

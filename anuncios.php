@@ -1,42 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./build/css/app.css">
-    <title>Bienes Raices</title>
-</head>
-<body>
+<?php
 
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
+require 'includes/funciones.php';
 
-                <a href="/">
-                    <img src="./build/img/logo.svg" alt="logo de Bienes Raices">
-                </a>
+incluirTemplate('header');
 
-                <div class="mobile-menu">
-                    <img src="/build/img/barras.svg" alt="icono menú responsivo">
-                </div>
+?>
 
-                <div class="derecha">
-
-                    <img src="build/img/dark-mode.svg" alt="boton para cambiar tema oscuro" class="dark-mode-boton">
-
-                    <nav class="navegacion">
-
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-                
-            </div> <!----Cierre de la barra-->
-
-        </div>
-    </header>
 
     <main class="contenedor seccion">
        
@@ -54,7 +23,7 @@
                 </picture>
 
                 <div class="contenido-anuncio">
-                    <h3>Casa de Lujo en el Lago</h3>
+                    <h3>Casa en el Lago</h3>
                     <p class="animacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum aliquam ipsam?
                         Obcaecati atque repellendus, animi nesciunt dolorem officia, nihil aspernatur eos ducimus
                         architecto odio assumenda similique, ab commodi perferendis.</p>
@@ -101,7 +70,7 @@
                 </picture>
 
                 <div class="contenido-anuncio">
-                    <h3>Casa de Lujo</h3>
+                    <h3>Casa de Lujo Nueva</h3>
                     <p class="animacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum aliquam ipsam?
                         Obcaecati atque repellendus, animi nesciunt dolorem officia, nihil aspernatur eos ducimus
                         architecto odio assumenda similique, ab commodi perferendis.</p>
@@ -195,7 +164,7 @@
                 </picture>
 
                 <div class="contenido-anuncio">
-                    <h3>Modelo Americano</h3>
+                    <h3>Modelo Americano </h3>
                     <p class="animacion-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum aliquam ipsam?
                         Obcaecati atque repellendus, animi nesciunt dolorem officia, nihil aspernatur eos ducimus
                         architecto odio assumenda similique, ab commodi perferendis.</p>
@@ -335,27 +304,7 @@
 
     </main>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
+    <?php
 
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-
-        <p class="copyright">
-            Todos los Derechos Reservados &copy;
-        </p>
-
-    </footer>
-
-
-
-      <!---Scripts--->
-      <script src="./build/js/bundle.min.js"></script>
-    
-</body>
-</html>
+    include './includes/templates/footer.php';
+?>
