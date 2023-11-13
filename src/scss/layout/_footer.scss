@@ -7,6 +7,17 @@
         padding-top: calc($separacion / 2);
     }
 
+    .navegacion{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+
+        @include tablet{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
     .copyright{
         color: $blanco;
         text-align: center;

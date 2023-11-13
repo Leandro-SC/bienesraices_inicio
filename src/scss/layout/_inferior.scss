@@ -47,21 +47,19 @@
             margin-top: 1rem;
         }
     }
+}
 
+.blog{
+    h3{
+        font-weight: $bold;
+    }
+}
+
+.informacion-meta{
     span{
         color: $amarillo;
         font-weight: $bold;
     }
-
-}
-
-.blog{
-
-    h3{
-        font-weight: $bold;
-    }
-
-
 }
 
 

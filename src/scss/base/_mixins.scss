@@ -35,6 +35,7 @@
     margin-top: calc($separacion / 2);
     display: $display;
     text-transform: uppercase;
+    border: none;
 
     &:hover {
         background-color: darken($colorFondo, 5);
