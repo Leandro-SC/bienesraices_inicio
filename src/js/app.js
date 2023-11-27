@@ -12,7 +12,7 @@ function darkMode() {
 
     botonDarkMode.addEventListener('click', function () {
         document.body.classList.toggle('dark-mode');
-        
+
         // Guardar el estado actual del modo oscuro en el almacenamiento local
         localStorage.setItem('modo-oscuro', document.body.classList.contains('dark-mode'));
     });
@@ -44,6 +44,7 @@ function navegacionResponsive() {
 
 
 }
+
 
 
 

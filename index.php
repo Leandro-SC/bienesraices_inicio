@@ -84,7 +84,7 @@ incluirTemplate('header',$inicio);
                 </ul>
 
                 <!---Enlace para propiedad ------>
-                <a href="anuncio.html" class="boton boton-anaranjado">
+                <a href="anuncio.php" class="boton boton-anaranjado">
                     Ver Propiedad
                 </a>
             </div> <!----Contenido Anuncios-------->
@@ -130,7 +130,7 @@ incluirTemplate('header',$inicio);
                 </ul>
 
                 <!---Enlace para propiedad ------>
-                <a href="anuncio.html" class="boton boton-anaranjado">
+                <a href="anuncio.php" class="boton boton-anaranjado">
                     Ver Propiedad
                 </a>
             </div> <!----Contenido Anuncios-------->
@@ -176,7 +176,7 @@ incluirTemplate('header',$inicio);
                 </ul>
 
                 <!---Enlace para propiedad ------>
-                <a href="anuncio.html" class="boton boton-anaranjado">
+                <a href="anuncio.php" class="boton boton-anaranjado">
                     Ver Propiedad
                 </a>
             </div> <!----Contenido Anuncios-------->
@@ -190,7 +190,7 @@ incluirTemplate('header',$inicio);
 
     <h2>Encuentra la casa de tus sueños</h2>
     <p>Llena el formulario de contacto y un aseosr se pondrá en contacto contigo a la brevedad</p>
-    <a href="contacto.html" class="boton-anaranjado-inline">Contáctanos</a>
+    <a href="contacto.php" class="boton-anaranjado-inline">Contáctanos</a>
 
 </section>
 
@@ -209,7 +209,7 @@ incluirTemplate('header',$inicio);
                 </picture>
             </div>
             <div class="texto-entrada">
-                <a href="entrada.html">
+                <a href="entrada.php">
                     <h4>Terraza en el Techo de tu casa</h4>
                     <p class="informacion-meta">Escrito el <span>20/10/2023</span> por: <span>Admin</span></p>
 
@@ -227,7 +227,7 @@ incluirTemplate('header',$inicio);
                 </picture>
             </div>
             <div class="texto-entrada">
-                <a href="entrada.html">
+                <a href="entrada.php">
                     <h4>Guía para decoración de tu hogar</h4>
                     <p class="informacion-meta">Escrito el <span>20/10/2023</span> por: <span>Admin</span></p>
 

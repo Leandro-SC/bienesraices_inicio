@@ -13,9 +13,9 @@ incluirTemplate('header');
     <div class="contenido-nosotros">
         <div class="imagen">
             <picture>
-                <source src="/bienesraicesbuild/img/nosotros.webp" type="image/webp">
-                <source src="/bienesraicesbuild/img/nosotros.jpg" type="image/jpeg">
-                <img loading="lazy" src="/bienesraicesbuild/img/nosotros.jpg" alt="Sobre Nosotros">
+                <source src="./build/img/nosotros.webp" type="image/webp">
+                <source src="./build/img/nosotros.jpg" type="image/jpeg">
+                <img loading="lazy" src="./build/img/nosotros.jpg" alt="Sobre Nosotros">
 
             </picture>
         </div>

@@ -22,7 +22,8 @@ incluirTemplate('header');
 
         <form  class="formulario">
 
-            <fieldset>
+            <fieldset class="formulario-prueba">
+
                 <legend>Información Personal</legend>
 
                 <label for="nombre">Nombre</label>
@@ -92,5 +93,5 @@ incluirTemplate('header');
 
     <?php
 
-    include './includes/templates/footer.php';
+incluirTemplate('footer');
 ?>

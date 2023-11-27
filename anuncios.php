@@ -55,7 +55,7 @@ incluirTemplate('header');
                     </ul>
 
                     <!---Enlace para propiedad ------>
-                    <a href="anuncio.html" class="boton boton-anaranjado">
+                    <a href="anuncio.php" class="boton boton-anaranjado">
                         Ver Propiedad
                     </a>
                 </div> <!----Contenido Anuncios-------->
@@ -102,7 +102,7 @@ incluirTemplate('header');
                     </ul>
 
                     <!---Enlace para propiedad ------>
-                    <a href="anuncio.html" class="boton boton-anaranjado">
+                    <a href="anuncio.php" class="boton boton-anaranjado">
                         Ver Propiedad
                     </a>
                 </div> <!----Contenido Anuncios-------->
@@ -149,7 +149,7 @@ incluirTemplate('header');
                     </ul>
 
                     <!---Enlace para propiedad ------>
-                    <a href="anuncio.html" class="boton boton-anaranjado">
+                    <a href="anuncio.php" class="boton boton-anaranjado">
                         Ver Propiedad
                     </a>
                 </div> <!----Contenido Anuncios-------->
@@ -196,7 +196,7 @@ incluirTemplate('header');
                     </ul>
 
                     <!---Enlace para propiedad ------>
-                    <a href="anuncio.html" class="boton boton-anaranjado">
+                    <a href="anuncio.php" class="boton boton-anaranjado">
                         Ver Propiedad
                     </a>
                 </div> <!----Contenido Anuncios-------->
@@ -244,7 +244,7 @@ incluirTemplate('header');
                     </ul>
 
                     <!---Enlace para propiedad ------>
-                    <a href="anuncio.html" class="boton boton-anaranjado">
+                    <a href="anuncio.php" class="boton boton-anaranjado">
                         Ver Propiedad
                     </a>
                 </div> <!----Contenido Anuncios-------->
@@ -291,7 +291,7 @@ incluirTemplate('header');
                     </ul>
 
                     <!---Enlace para propiedad ------>
-                    <a href="anuncio.html" class="boton boton-anaranjado">
+                    <a href="anuncio.php" class="boton boton-anaranjado">
                         Ver Propiedad
                     </a>
                 </div> <!----Contenido Anuncios-------->

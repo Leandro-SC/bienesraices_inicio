@@ -17,11 +17,10 @@
         </p>
 
     </footer>
-
-    //build/js/bundle.min.js
+    
     <!---Scripts--->
-    <script src="build/js/bundle.min.js">
-        console.log("Pruebaaaaaaa");
+    <script src="/bienesraices/build/js/bundle.min.js">
+      
     </script>
 
 </body>

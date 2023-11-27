@@ -12,9 +12,9 @@ incluirTemplate('header');
         <h1>Casa en Venta fente al bosque</h1>
 
         <picture>
-            <source loading="lazy" srcset="/bienesraicesbuild/img/destacada.webp" type="image/webp">
-            <source loading="lazy" srcset="/bienesraicesbuild/img/destacada.jpg" type="image/jpeg">
-            <img loading="lazy" src="/bienesraicesbuild/img/destacada.jpg" alt="Imagen de la propiedad">
+            <source loading="lazy" srcset="./build/img/destacada.webp" type="image/webp">
+            <source loading="lazy" srcset="./build/img/destacada.jpg" type="image/jpeg">
+            <img loading="lazy" src="./build/img/destacada.jpg" alt="Imagen de la propiedad">
         </picture>
 
         <div class="resumen-propiedad">
@@ -23,13 +23,13 @@ incluirTemplate('header');
             <ul class="iconos-caracteristicas">
                 <li>
                     <div class="icono-inferior">
-                        <img loading="lazy" src="/bienesraicesbuild/img/icono_wc.svg" alt="icono baño">
+                        <img loading="lazy" src="./build/img/icono_wc.svg" alt="icono baño">
                         <p>3</p>
                     </div>
                 </li>
                 <li>
                     <div class="icono-inferior">
-                        <img loading="lazy" src="/bienesraicesbuild/img/icono_estacionamiento.svg"
+                        <img loading="lazy" src="./build/img/icono_estacionamiento.svg"
                             alt="icono estacionamiento">
                         <p>1</p>
                     </div>
@@ -38,7 +38,7 @@ incluirTemplate('header');
                 <li>
 
                     <div class="icono-inferior">
-                        <img loading="lazy" src="/bienesraicesbuild/img/icono_dormitorio.svg" alt="icono dormitorios">
+                        <img loading="lazy" src="./build/img/icono_dormitorio.svg" alt="icono dormitorios">
                         <p>3</p>
                     </div>
 

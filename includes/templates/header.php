@@ -15,16 +15,16 @@
             <div class="barra">
 
                 <a href="/bienesraices/index.php">
-                    <img src="build/img/logo.svg" alt="logo de Bienes Raices">
+                    <img src="/bienesraices/build/img/logo.svg" alt="logo de Bienes Raices">
                 </a>
 
                 <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menú responsivo">
+                    <img src="/bienesraices/build/img/barras.svg" alt="icono menú responsivo">
                 </div>
 
                 <div class="derecha">
 
-                    <img src="build/img/dark-mode.svg" alt="boton para cambiar tema oscuro" class="dark-mode-boton">
+                    <img src="/bienesraices/build/img/dark-mode.svg" alt="boton para cambiar tema oscuro" class="dark-mode-boton">
 
                     <nav class="navegacion">
 
