@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     eventListeners();
     darkMode();
-
+    eliminarMensajeConfirmacion();
 
 });
 
@@ -46,7 +46,18 @@ function navegacionResponsive() {
 }
 
 
+function eliminarMensajeConfirmacion() {
+    
+    const mensaje = document.getElementById('mensaje-confirmacion');
 
+        if (mensaje) {
+        setTimeout(() => {
+            mensaje.remove();
+        },3000)
+        console.log("Parrafo Eliminado ...")
+    }
+
+}
 
 
 

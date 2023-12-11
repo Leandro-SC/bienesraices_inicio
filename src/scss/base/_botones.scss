@@ -8,6 +8,18 @@
     @include boton($amarillo,$blanco,inline-block);
 }
 
+.boton-rojo-block{
+    @include boton($rojo,$blanco,block);
+    width: 100%;
+}
+
+.boton-verde-block{
+    @include boton($verde,$blanco,block);
+}
+
+.boton-azul-claro{
+    @include boton($verde,$blanco,inline-block);
+}
 
 
 
