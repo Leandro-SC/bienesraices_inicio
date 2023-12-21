@@ -43,6 +43,7 @@
 
                     <h1>Venta de Casas y Departamentos</h1>
            <?php } ?>
+           
         </div>
     </header>
 

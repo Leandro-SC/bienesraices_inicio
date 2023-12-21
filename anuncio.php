@@ -1,37 +1,55 @@
 <?php
 
 require 'includes/funciones.php';
-
 incluirTemplate('header');
+
+$id = $_GET['id'] ?? null;
+$id = filter_var($id, FILTER_VALIDATE_INT);
+
+if (!$id) {
+    header('Location: /');
+}
+
+//Importar la conexion
+require __DIR__ . '/includes/config/database.php';
+
+$db = conectarDB();
+
+//Consultar
+$query = "SELECT * FROM propiedades WHERE id = {$id}";
+
+//Obtener resultado
+$resultado = mysqli_query($db, $query);
+
+if (!$resultado ->num_rows) {
+    header('Location: /bienesraices/index.php');
+}
+
+$propiedad = mysqli_fetch_assoc($resultado);
 
 ?>
 
-
-    <main class="contenedor seccion contenido-centrado">
-
-        <h1>Casa en Venta fente al bosque</h1>
+<main class="contenedor seccion contenido-centrado">
+        <h1><?php echo $propiedad['titulo'] ?></h1>
 
         <picture>
-            <source loading="lazy" srcset="./build/img/destacada.webp" type="image/webp">
-            <source loading="lazy" srcset="./build/img/destacada.jpg" type="image/jpeg">
-            <img loading="lazy" src="./build/img/destacada.jpg" alt="Imagen de la propiedad">
+            <img loading="lazy" src="./imagenes/<?php echo $propiedad['imagen'] ?>" alt="Imagen de la propiedad">
         </picture>
 
         <div class="resumen-propiedad">
-            <p class="precio">$3,000,000</p>
+            <p class="precio"><?php echo $propiedad['precio'] ?></p>
 
             <ul class="iconos-caracteristicas">
                 <li>
                     <div class="icono-inferior">
                         <img loading="lazy" src="./build/img/icono_wc.svg" alt="icono baño">
-                        <p>3</p>
+                        <p><?php echo $propiedad['wc'] ?></p>
                     </div>
                 </li>
                 <li>
                     <div class="icono-inferior">
-                        <img loading="lazy" src="./build/img/icono_estacionamiento.svg"
-                            alt="icono estacionamiento">
-                        <p>1</p>
+                        <img loading="lazy" src="./build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
+                        <p><?php echo $propiedad['estacionamiento'] ?></p>
                     </div>
 
                 </li>
@@ -39,40 +57,21 @@ incluirTemplate('header');
 
                     <div class="icono-inferior">
                         <img loading="lazy" src="./build/img/icono_dormitorio.svg" alt="icono dormitorios">
-                        <p>3</p>
+                        <p><?php echo $propiedad['habitaciones'] ?></p>
                     </div>
 
                 </li>
             </ul>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eveniet aliquid dolorem veniam. Fugiat, nesciunt
-                dolores deserunt rerum magni adipisci provident pariatur, illum totam ipsum nemo ullam quibusdam saepe
-                beatae.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae explicabo repellendus reprehenderit
-                doloribus consectetur illum ullam, accusamus veniam itaque, qui exercitationem minima officia delectus!
-                Eveniet perspiciatis totam nihil libero veniam.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam reiciendis dolores animi nemo iste facilis,
-                atque accusantium velit consequuntur incidunt tempora, fuga hic, repudiandae deleniti. Quos excepturi
-                aliquid dicta exercitationem.
-               
-            </p>
-    
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quo numquam. Molestiae iste inventore dicta
-                necessitatibus mollitia excepturi veniam? Eaque quo magnam accusamus dolore odit rerum nobis adipisci
-                voluptatibus unde.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati saepe voluptates ipsam maiores ut natus
-                nobis nemo unde molestias laudantium eveniet at, deleniti cumque architecto quam, aperiam tenetur illo
-                necessitatibus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatibus numquam ut veniam totam?
-                Exercitationem, repudiandae. Impedit deleniti doloribus dolor. Cupiditate dolorem quasi natus possimus quae
-                consectetur, reiciendis vel iusto.</p>
+            <p><?php echo $propiedad['descripcion'] ?></p>
 
         </div>
 
-    </main>
+</main>
 
-    <?php
+<?php
 
-    include './includes/templates/footer.php';
+include './includes/templates/footer.php';
+//Cerrar conexion
+mysqli_close($db);
 ?>
-
