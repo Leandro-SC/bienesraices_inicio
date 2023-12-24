@@ -1,5 +1,14 @@
 <?php
 
+//Funciones php
+require '../../includes/funciones.php';
+$auth = isLogin();
+
+if (!$auth) {
+    header('Location: /bienesraices/index.php');
+}
+
+
 //Obtener ID
 $id = $_GET['id'];
 $id = filter_var($id, FILTER_VALIDATE_INT);
@@ -146,8 +155,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-//Funciones php
-require '../../includes/funciones.php';
+
 incluirTemplate('header');
 
 ?>

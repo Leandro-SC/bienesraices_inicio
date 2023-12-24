@@ -1,4 +1,13 @@
 <?php
+
+//Funciones php
+require '../../includes/funciones.php';
+$auth = isLogin();
+
+if (!$auth) {
+    header('Location: /bienesraices/admin/index.php');
+}
+
 //Base de Datos
 require '../../includes/config/database.php';
 $bd = conectarDB();
@@ -124,16 +133,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         } catch (Exception $e) {
             echo "Error: " . $e->getMessage();
-            header('Location: /bienesraices/admin/index.php');
+            header('Location: /bienesraices/index.php');
             exit(); // Agregado para evitar ejecución adicional del código después de la redirección
         }
     }
 }
 
 
-
-//Funciones php
-require '../../includes/funciones.php';
 incluirTemplate('header');
 
 ?>
